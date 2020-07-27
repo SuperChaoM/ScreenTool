@@ -1,0 +1,335 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		74D87F7024CE7BA200AE7764 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 74D87F6F24CE7BA200AE7764 /* main.m */; };
+		74D87F7824CE7BCA00AE7764 /* ScreenUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 74D87F7724CE7BCA00AE7764 /* ScreenUtil.m */; };
+		74D87F7B24CE7C6F00AE7764 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 74D87F7A24CE7C6F00AE7764 /* QuartzCore.framework */; };
+		74D87F7F24CE7CCC00AE7764 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 74D87F7E24CE7CCC00AE7764 /* CoreGraphics.framework */; };
+		74D87F8124CE7CD600AE7764 /* IOSurface.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 74D87F8024CE7CD600AE7764 /* IOSurface.framework */; };
+		74D87F8324CE7CEC00AE7764 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 74D87F8224CE7CEC00AE7764 /* UIKit.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		74D87F6524CE7BA200AE7764 /* ScreenDaemon */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = ScreenDaemon; sourceTree = BUILT_PRODUCTS_DIR; };
+		74D87F6A24CE7BA200AE7764 /* control */ = {isa = PBXFileReference; lastKnownFileType = text; name = control; path = Package/DEBIAN/control; sourceTree = "<group>"; };
+		74D87F6B24CE7BA200AE7764 /* monkeydev.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = monkeydev.entitlements; sourceTree = "<group>"; };
+		74D87F6E24CE7BA200AE7764 /* 0xdeadfa11 */ = {isa = PBXFileReference; lastKnownFileType = text; name = 0xdeadfa11; path = Package/usr/bin/0xdeadfa11; sourceTree = "<group>"; };
+		74D87F6F24CE7BA200AE7764 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		74D87F7624CE7BCA00AE7764 /* ScreenUtil.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ScreenUtil.h; sourceTree = "<group>"; };
+		74D87F7724CE7BCA00AE7764 /* ScreenUtil.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ScreenUtil.m; sourceTree = "<group>"; };
+		74D87F7A24CE7C6F00AE7764 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		74D87F7C24CE7CC100AE7764 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
+		74D87F7E24CE7CCC00AE7764 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		74D87F8024CE7CD600AE7764 /* IOSurface.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOSurface.framework; path = System/Library/Frameworks/IOSurface.framework; sourceTree = SDKROOT; };
+		74D87F8224CE7CEC00AE7764 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		74D87F6224CE7BA200AE7764 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				74D87F8324CE7CEC00AE7764 /* UIKit.framework in Frameworks */,
+				74D87F8124CE7CD600AE7764 /* IOSurface.framework in Frameworks */,
+				74D87F7F24CE7CCC00AE7764 /* CoreGraphics.framework in Frameworks */,
+				74D87F7B24CE7C6F00AE7764 /* QuartzCore.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		74D87F5C24CE7BA200AE7764 = {
+			isa = PBXGroup;
+			children = (
+				74D87F6724CE7BA200AE7764 /* ScreenDaemon */,
+				74D87F6624CE7BA200AE7764 /* Products */,
+				74D87F7924CE7C6E00AE7764 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		74D87F6624CE7BA200AE7764 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				74D87F6524CE7BA200AE7764 /* ScreenDaemon */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		74D87F6724CE7BA200AE7764 /* ScreenDaemon */ = {
+			isa = PBXGroup;
+			children = (
+				74D87F6B24CE7BA200AE7764 /* monkeydev.entitlements */,
+				74D87F6F24CE7BA200AE7764 /* main.m */,
+				74D87F6824CE7BA200AE7764 /* Package */,
+				74D87F7624CE7BCA00AE7764 /* ScreenUtil.h */,
+				74D87F7724CE7BCA00AE7764 /* ScreenUtil.m */,
+			);
+			path = ScreenDaemon;
+			sourceTree = "<group>";
+		};
+		74D87F6824CE7BA200AE7764 /* Package */ = {
+			isa = PBXGroup;
+			children = (
+				74D87F6924CE7BA200AE7764 /* DEBIAN */,
+				74D87F6C24CE7BA200AE7764 /* usr */,
+			);
+			name = Package;
+			sourceTree = "<group>";
+		};
+		74D87F6924CE7BA200AE7764 /* DEBIAN */ = {
+			isa = PBXGroup;
+			children = (
+				74D87F6A24CE7BA200AE7764 /* control */,
+			);
+			name = DEBIAN;
+			sourceTree = "<group>";
+		};
+		74D87F6C24CE7BA200AE7764 /* usr */ = {
+			isa = PBXGroup;
+			children = (
+				74D87F6D24CE7BA200AE7764 /* bin */,
+			);
+			name = usr;
+			sourceTree = "<group>";
+		};
+		74D87F6D24CE7BA200AE7764 /* bin */ = {
+			isa = PBXGroup;
+			children = (
+				74D87F6E24CE7BA200AE7764 /* 0xdeadfa11 */,
+			);
+			name = bin;
+			sourceTree = "<group>";
+		};
+		74D87F7924CE7C6E00AE7764 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				74D87F8224CE7CEC00AE7764 /* UIKit.framework */,
+				74D87F8024CE7CD600AE7764 /* IOSurface.framework */,
+				74D87F7E24CE7CCC00AE7764 /* CoreGraphics.framework */,
+				74D87F7C24CE7CC100AE7764 /* CoreFoundation.framework */,
+				74D87F7A24CE7C6F00AE7764 /* QuartzCore.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		74D87F6424CE7BA200AE7764 /* ScreenDaemon */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 74D87F7324CE7BA200AE7764 /* Build configuration list for PBXNativeTarget "ScreenDaemon" */;
+			buildPhases = (
+				74D87F6124CE7BA200AE7764 /* Sources */,
+				74D87F6224CE7BA200AE7764 /* Frameworks */,
+				74D87F6324CE7BA200AE7764 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ScreenDaemon;
+			productName = ScreenDaemon;
+			productReference = 74D87F6524CE7BA200AE7764 /* ScreenDaemon */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		74D87F5D24CE7BA200AE7764 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1020;
+				TargetAttributes = {
+					74D87F6424CE7BA200AE7764 = {
+						CreatedOnToolsVersion = 10.2;
+					};
+				};
+			};
+			buildConfigurationList = 74D87F6024CE7BA200AE7764 /* Build configuration list for PBXProject "ScreenDaemon" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 74D87F5C24CE7BA200AE7764;
+			productRefGroup = 74D87F6624CE7BA200AE7764 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				74D87F6424CE7BA200AE7764 /* ScreenDaemon */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		74D87F6324CE7BA200AE7764 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/opt/MonkeyDev/bin/md --xcbp";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		74D87F6124CE7BA200AE7764 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				74D87F7024CE7BA200AE7764 /* main.m in Sources */,
+				74D87F7824CE7BCA00AE7764 /* ScreenUtil.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		74D87F7124CE7BA200AE7764 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "*.nib *.lproj *.gch (*) .DS_Store CVS .svn .git .hg *.xcodeproj *.xcode *.pbproj *.pbxproj";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(MonkeyDevPath)/frameworks/**",
+					"$(MonkeyDevTheosPath)/vendor/lib",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "$(MonkeyDevTheosPath)/vendor/include/**";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LIBRARY_SEARCH_PATHS = "$(MonkeyDevTheosPath)/vendor/lib/**";
+				MonkeyDevPath = /opt/MonkeyDev;
+				MonkeyDevTheosPath = /opt/theos;
+				OTHER_CFLAGS = "-DTHEOS_INSTANCE_NAME=\"\\\"ScreenDaemon\\\"\"";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		74D87F7224CE7BA200AE7764 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "*.nib *.lproj *.gch (*) .DS_Store CVS .svn .git .hg *.xcodeproj *.xcode *.pbproj *.pbxproj";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(MonkeyDevPath)/frameworks/**",
+					"$(MonkeyDevTheosPath)/vendor/lib",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "$(MonkeyDevTheosPath)/vendor/include/**";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LIBRARY_SEARCH_PATHS = "$(MonkeyDevTheosPath)/vendor/lib/**";
+				MonkeyDevPath = /opt/MonkeyDev;
+				MonkeyDevTheosPath = /opt/theos;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_CFLAGS = "-DTHEOS_INSTANCE_NAME=\"\\\"ScreenDaemon\\\"\"";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = NO;
+			};
+			name = Debug;
+		};
+		74D87F7424CE7BA200AE7764 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CODE_SIGN_ENTITLEMENTS = ScreenDaemon/monkeydev.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
+				INSTALL_PATH = /usr/bin;
+				MonkeyDevBuildPackageOnAnyBuild = NO;
+				MonkeyDevClearUiCacheOnInstall = NO;
+				MonkeyDevCopyOnBuild = NO;
+				MonkeyDevDeviceIP = "";
+				MonkeyDevDevicePassword = "";
+				MonkeyDevDevicePort = "";
+				MonkeyDevInstallOnAnyBuild = YES;
+				MonkeyDevInstallOnProfiling = YES;
+				MonkeyDevkillProcessOnInstall = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		74D87F7524CE7BA200AE7764 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CODE_SIGN_ENTITLEMENTS = ScreenDaemon/monkeydev.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
+				INSTALL_PATH = /usr/bin;
+				MonkeyDevBuildPackageOnAnyBuild = NO;
+				MonkeyDevClearUiCacheOnInstall = NO;
+				MonkeyDevCopyOnBuild = NO;
+				MonkeyDevDeviceIP = "";
+				MonkeyDevDevicePassword = "";
+				MonkeyDevDevicePort = "";
+				MonkeyDevInstallOnAnyBuild = YES;
+				MonkeyDevInstallOnProfiling = YES;
+				MonkeyDevkillProcessOnInstall = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		74D87F6024CE7BA200AE7764 /* Build configuration list for PBXProject "ScreenDaemon" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				74D87F7124CE7BA200AE7764 /* Release */,
+				74D87F7224CE7BA200AE7764 /* Debug */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		74D87F7324CE7BA200AE7764 /* Build configuration list for PBXNativeTarget "ScreenDaemon" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				74D87F7424CE7BA200AE7764 /* Release */,
+				74D87F7524CE7BA200AE7764 /* Debug */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 74D87F5D24CE7BA200AE7764 /* Project object */;
+}
